@@ -1,6 +1,5 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import Navbar from '../component/auth/common/Navbar';
 
 const Home = () => {
     const navigate = useNavigate();
