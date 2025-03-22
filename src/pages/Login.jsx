@@ -1,5 +1,6 @@
 import React from 'react'
 import LoginForm from '../component/auth/LoginForm'
+import { Link } from 'react-router-dom'
 
 const Login = () => {
   return (
@@ -26,7 +27,7 @@ const Login = () => {
 
         {/* Additional Info */}
       <p className=" text-gray-600 text-sm">
-        Need an account? <a href="/signup" className="text-blue-600 hover:underline">Sign up here</a>
+        Need an account?<Link className="text-blue-600 hover:underline" to="/signup">Sign up here</Link>
       </p>
       </div>
     </div>

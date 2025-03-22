@@ -2,7 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
 import { signUp } from "../../services/operations/authAPI";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const SignUpForm = () => {
     const navigate = useNavigate();
@@ -157,8 +157,9 @@ const SignUpForm = () => {
             Create Account 
            </button>
           </div>
+          
           <p className=" text-gray-600 text-sm">
-            Already have an account? <a href="/login" className="text-blue-600 hover:underline">Log in here</a>
+            Already have an account? <Link className="text-blue-600 hover:underline" to="/login"> Log in here</Link>
           </p>
         </form>
       </div>
